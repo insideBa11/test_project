@@ -18,11 +18,14 @@ export const detectDevice = () => {
 };
 
 interface BottomBtnProps {
-    device: string
+    device: string | null
 }
 
 const BottomBtn: React.FC<BottomBtnProps> = (props) => {
+
     const {device} = props;
+
+    console.log('BottomBtn', device)
 
     const arr = [1, 2, 3];
 
@@ -69,8 +72,6 @@ const BottomBtn: React.FC<BottomBtnProps> = (props) => {
                 </div>
             }
         </div>
-
-
     );
 }
 
@@ -106,7 +107,7 @@ const Hero: React.FC = () => {
                 </button>
             </div>
             <div className='w-full   flex-1'>
-                <BottomBtn/>
+                <BottomBtn device={device}/>
             </div>
         </div>
     );
