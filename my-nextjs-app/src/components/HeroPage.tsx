@@ -99,7 +99,7 @@ const Hero: React.FC = () => {
                 <h1 className={`text-4xl sm:text-5xl md:text-6xl font-bold mb-4  leading-sung w-[50%] ${device === 'desktop' ? 'w-[50%] text-[#333]' : 'w-full text-[#FFF] text-shadow-outline text-stroke-black'}`}>Lorem
                     ipsum dolor sit amet, suak adipisicing.</h1>
                 <span
-                    className="text-base sm:text-lg md:text-xl mb-6 ${device === 'desktop' ? 'w-[50%] text-[#333]' : 'w-full text-[#FFF] text-shadow-outline text-stroke-black'}` ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae fugiat labore</span>
+                    className={`text-base sm:text-lg md:text-xl mb-6 ${device === 'desktop' ? 'w-[50%] text-[#333]' : 'w-full text-[#FFF] text-shadow-outline text-stroke-black'}`} >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae fugiat labore</span>
                 <button className="bg-[#DC0155] w-32 h-10 text-white font-bold py-2 px-4 rounded" onClick={() => {
                     console.log(device)
                 }}>
