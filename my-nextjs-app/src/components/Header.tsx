@@ -7,22 +7,23 @@ const Header = () => {
             {/* btn-container */}
             <div className="flex h-full justify-between px-[8%]">
                 {/* left-btn */}
-                <div className='flex-1  h-full bg-red-100'>
-                    <button className='w-[40%] flex items-center justify-star h-full border border-[#222]'>
+                <div className='flex-1  h-full '>
+                    <button className='w-[40%] flex items-center justify-star h-full '>
                         <span className='font-bold text-xl text-[#DC0155]'>Luxe</span>
                     </button>
                 </div>
-                <div className='min-w-[50%] flex justify-between bg-blue-100'>
+                <div className='min-w-[50%] flex justify-between '>
                     {
                         midBtnText.map((item,index) => (
-                            <button className='w-[20%] h-full overflow-hidden text-ellipsis whitespace-nowrap'>{item}</button>
+                            <button className='w-[20%] h-full text-sm overflow-hidden text-ellipsis whitespace-nowrap'>{item}</button>
                         ))
 
                     }
                 </div>
-                <div className='flex-1 justify-end h-full bg-red-100'>
-                    <button className='w-[40%] flex items-center h-full justify-end  border border-[#222]'>
-                        <span className='font-bold text-xl text-[#DC0155]'>Luxe</span>
+                <div className='flex-1 flex justify-end items-end h-full '>
+                    {/* 这将确保button在div的右侧 */}
+                    <button className='w-[40%] flex justify-end items-center h-full '>
+                        <span className='font-bold text-xl text-[#222]'>=</span>
                     </button>
                 </div>
             </div>
