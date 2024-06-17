@@ -2,7 +2,7 @@
 
 import {useState, useEffect} from 'react'
 
-export const detectDevice = () => {
+const detectDevice = () => {
     if (typeof window === 'undefined') {
         return 'unknown'; // 如果在服务器端渲染，返回 'unknown'
     }
