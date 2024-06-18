@@ -54,7 +54,6 @@ const BottomBtn: React.FC<BottomBtnProps> = (props) => {
                         ))
                     }
                 </div> :
-                // 让div里面的三个button，平分垂直空间
                 <div className='w-full  h-full flex flex-col justify-between'>
                     {
                         arr.map((item, index) => (

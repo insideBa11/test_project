@@ -15,7 +15,7 @@ const Header = () => {
                 <div className='min-w-[50%] flex justify-between '>
                     {
                         midBtnText.map((item,index) => (
-                            <button className='w-[20%] h-full text-sm overflow-hidden text-ellipsis whitespace-nowrap'>{item}</button>
+                            <button key={index} className='w-[20%] h-full text-sm overflow-hidden text-ellipsis whitespace-nowrap'>{item}</button>
                         ))
 
                     }

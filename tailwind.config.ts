@@ -1,4 +1,4 @@
-import type {Config} from "tailwindcss";
+import type { Config } from "tailwindcss";
 
 const config: Config = {
     content: [
@@ -16,7 +16,7 @@ const config: Config = {
         },
     },
     plugins: [
-        function ({addUtilities}) {
+        function ({ addUtilities }: { addUtilities: any }) {
             const newUtilities = {
                 '.text-shadow-outline': {
                     'text-shadow': '0 0 3px #000, 0 0 3px #000, 0 0 3px #000, 0 0 3px #000',
